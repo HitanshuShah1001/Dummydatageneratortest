@@ -15,13 +15,10 @@ Usage
 
 To use the package, import it into your project:
 
-javascript
-Copy code
 const generateDummyData = require('dummydata-generator');
 Then you can use the generateDummyData() function to generate dummy data.
 
-javascript
-Copy code
+
 const fields = [
   { id: Number },
   { name: String },
@@ -34,6 +31,7 @@ const totalnumberofdatatobegenerated = 5;
 const dummydata = generateDummyData({ totalnumberofdatatobegenerated, fields });
 console.log(dummydata);
 Parameters
+
 The function generateDummyData() takes two parameters:
 
 totalnumberofdatatobegenerated: The total number of data objects to be generated.
