@@ -45,10 +45,4 @@ function getDummyData({ totalnumberofdatatobegenerated, fields }) {
   return dummydata;
 }
 
-console.log(
-  getDummyData({
-    totalnumberofdatatobegenerated: 4,
-    fields: [{ name: String, length: 12 }],
-  })
-);
 module.exports = getDummyData;
