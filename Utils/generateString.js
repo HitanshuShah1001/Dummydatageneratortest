@@ -1,7 +1,10 @@
 const characters = require("../Constants/characters");
-function generateString() {
+function generateString({ length = undefined }) {
   let randomString = "";
-  let totallengthofstringtobegenerated = Math.floor(Math.random() * 26);
+
+  let totallengthofstringtobegenerated = length
+    ? length
+    : Math.ceil(Math.random() * 26);
   for (let i = 0; i < totallengthofstringtobegenerated; i++) {
     randomString += characters.charAt(
       Math.floor(Math.random() * characters.length)
